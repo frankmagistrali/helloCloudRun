@@ -9,6 +9,7 @@ class HelloResource {
 //  @Context var uriInfo: UriInfo = null
 
   @GET
+  @Path("/")
   @Produces(Array(MediaType.APPLICATION_JSON))
   def helloWorld = {
      "Hello World"

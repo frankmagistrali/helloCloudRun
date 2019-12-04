@@ -6,7 +6,7 @@ object main {
 
   def main(args: Array[String]) : Unit = {
     JettyHttpContainerFactory.createServer(
-      UriBuilder.fromUri("http://localhost/").port(9998).build(),
+      UriBuilder.fromUri("http://localhost/").port(8080).build(),
       new ResourceConfig(classOf[HelloResource])
     )
   }
